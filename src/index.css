@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy-950: #172554;
+  --color-indigo-primary: #635BFF;
+  --color-indigo-hover: #5248F5;
+  --color-lavender-soft: #F0EEFF;
+  --color-mint-soft: #D9FBEA;
+  --color-success-green: #159B69;
+  --color-canvas: #FAFAFC;
+  --color-surface-muted: #F3F4F8;
+  --color-ink-primary: #171923;
+  --color-ink-secondary: #697386;
+  --color-ink-muted: #9CA3AF;
+  --color-hairline: #E5E7EB;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #171923;
+    background-color: #FAFAFC;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

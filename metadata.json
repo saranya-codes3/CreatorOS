@@ -1,0 +1,6 @@
+{
+  "name": "CREATOR OS",
+  "description": "AI-powered business management and financial intelligence operating system for modern creators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
